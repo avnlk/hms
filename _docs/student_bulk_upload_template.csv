@@ -1,0 +1,4 @@
+id,rollNumber,name,gender,batch,program,email,phoneNumber,address,remarks,status
+STU-001,IMT2024001,Aarav Mehta,Male,2024,MTech,aarav.mehta@iiitb.ac.in,9876543210,Bengaluru Karnataka,Joined via merit list,Active
+STU-002,IMT2024002,Diya Nair,Female,2024,MTech,diya.nair@iiitb.ac.in,9876501234,Kochi Kerala,,Active
+STU-003,IMT2024003,Rohan Kulkarni,Male,2024,MTech,rohan.kulkarni@iiitb.ac.in,9876512345,Pune Maharashtra,Transferred from waitlist,Active

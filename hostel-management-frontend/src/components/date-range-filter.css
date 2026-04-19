@@ -1,0 +1,67 @@
+.date-range-filter-trigger {
+  height: 24px;
+  padding: 0 10px;
+  font-size: 10px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.date-range-filter-popover .ant-popover-inner {
+  padding: 0;
+}
+
+.date-range-filter-popover-content {
+  padding: 10px 12px 12px;
+  min-width: 560px;
+}
+
+.date-range-filter-popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.date-range-filter-range-text-wrap {
+  flex: 1;
+  min-width: 0;
+}
+
+.date-range-filter-popup-header-icon {
+  color: #1890ff;
+  font-size: 14px;
+}
+
+.date-range-filter-range-tag {
+  font-size: 13px;
+  color: #333;
+  white-space: nowrap;
+}
+
+.date-range-filter-done {
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* Hide RangePicker inputs so only the two-month panel shows (matches screenshot layout) */
+.date-range-filter-embedded.ant-picker-range {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  width: 100%;
+}
+
+.date-range-filter-embedded .ant-picker-input {
+  display: none !important;
+}
+
+.date-range-filter-embedded .ant-picker-range-separator {
+  display: none !important;
+}
+
+.date-range-filter-embedded .ant-picker-active-bar {
+  display: none !important;
+}

@@ -1,0 +1,124 @@
+.student-admin-page {
+  background: #e1f5fe;
+  min-height: calc(100vh - 60px);
+  padding: 8px;
+}
+
+.student-admin-card {
+  background: #f0f0f0;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  padding: 10px 10px 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.student-admin-header {
+  background: linear-gradient(90deg, #01b7df 0%, #03adef 100%);
+  border-radius: 2px;
+  min-height: 34px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.student-admin-header h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.student-admin-bulk-btn {
+  height: 20px;
+  padding: 0 12px;
+  font-size: 10px;
+  border-radius: 2px;
+  background: #00b3e3;
+}
+
+.student-admin-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.student-admin-form-grid .ant-form-item {
+  margin-bottom: 8px;
+}
+
+.student-admin-form-grid .ant-input,
+.student-admin-form-grid .ant-select-selector,
+.student-admin-form-grid .ant-input-affix-wrapper,
+.student-admin-form-grid .ant-input-outlined {
+  height: 24px;
+  border-radius: 1px;
+  font-size: 10px;
+}
+
+.student-admin-form-grid .ant-select .ant-select-selection-placeholder {
+  font-size: 10px;
+}
+
+.student-admin-form-grid .ant-input::placeholder,
+.student-admin-form-grid .ant-input-textarea textarea::placeholder {
+  font-size: 10px;
+}
+
+.student-admin-form-grid .ant-input-textarea textarea {
+  min-height: 45px !important;
+  font-size: 10px;
+  border-radius: 1px;
+}
+
+.student-admin-submit-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2px auto 8px;
+  max-width: 720px;
+}
+
+.student-admin-submit {
+  min-width: 68px;
+  height: 22px;
+  font-size: 10px;
+  border-radius: 2px;
+  background: #00a8e8;
+}
+
+.student-admin-table-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.student-admin-search {
+  width: 90px;
+}
+
+.student-admin-search .ant-input {
+  font-size: 10px;
+}
+
+.student-admin-table .ant-table {
+  border: 1px solid #dcdcdc;
+}
+
+.student-admin-table .ant-table-thead > tr > th {
+  background: #d8f1fb;
+  color: #5f5f5f;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 6px 8px;
+}
+
+.student-admin-table .ant-table-tbody > tr > td {
+  font-size: 10px;
+  color: #7a7a7a;
+  padding: 6px 8px;
+}

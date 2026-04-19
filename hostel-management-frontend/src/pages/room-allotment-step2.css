@@ -1,0 +1,255 @@
+.room-allotment-step2 {
+  max-width: 100%;
+}
+
+.room-allotment-step2-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 14px;
+  font-size: 12px;
+  color: #595959;
+}
+
+.room-allotment-step2-allotting strong {
+  font-weight: 600;
+  color: #262626;
+}
+
+.room-allotment-step2-meta-right {
+  flex-shrink: 0;
+  font-size: 12px;
+  color: #262626;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.room-allotment-step2-filters {
+  margin-bottom: 10px;
+}
+
+.room-allotment-step2-filter-label {
+  font-size: 12px;
+  color: #595959;
+}
+
+.room-allotment-step2-select {
+  min-width: 120px;
+}
+
+.room-allotment-step2-search {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.room-allotment-step2-room-input {
+  width: 140px;
+  max-width: 40vw;
+}
+
+.room-allotment-step2-search-btn {
+  background: #1890ff !important;
+  border-color: #1890ff !important;
+}
+
+.room-allotment-step2-grid-wrap {
+  max-height: min(420px, 55vh);
+  overflow: auto;
+  padding: 4px 0 12px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+.room-allotment-step2-section {
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.room-allotment-step2-section:last-child {
+  margin-bottom: 4px;
+}
+
+.room-allotment-step2-section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.room-allotment-step2-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  padding: 2px 8px;
+  border-radius: 2px;
+  background: #1890ff;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.room-allotment-step2-floor-title {
+  font-size: 12px;
+  color: #595959;
+  font-weight: 500;
+}
+
+.room-allotment-step2-type-line {
+  font-size: 11px;
+  color: #8c8c8c;
+  margin-left: 4px;
+}
+
+.room-allotment-step2-bed-ico {
+  margin-right: 4px;
+  color: #1890ff;
+}
+
+.room-allotment-step2-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 32px);
+  gap: 4px;
+  justify-content: start;
+}
+
+.room-allotment-cell {
+  width: 32px;
+  height: 28px;
+  font-size: 9px;
+  line-height: 1;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  background: #fff;
+  color: #595959;
+}
+
+.room-allotment-cell:disabled {
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.room-allotment-cell-available {
+  background: #52c41a;
+  border-color: #389e0d;
+  color: #fff;
+}
+
+.room-allotment-cell-occupied {
+  background: #ff4d4f;
+  border-color: #cf1322;
+  color: #fff;
+}
+
+.room-allotment-cell-selected {
+  background: #1890ff;
+  border-color: #096dd9;
+  color: #fff;
+}
+
+.room-allotment-cell-neutral {
+  background: #fff;
+  border-color: #d9d9d9;
+  color: #595959;
+}
+
+.room-allotment-step2-next {
+  margin-top: 16px;
+}
+
+.room-allotment-bed-modal-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.room-allotment-bed-room-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  background: #1890ff;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.room-allotment-bed-room-pill-icon {
+  font-size: 14px;
+}
+
+.room-allotment-bed-type-label {
+  font-size: 13px;
+  color: #595959;
+}
+
+.room-allotment-bed-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.room-allotment-bed-pill {
+  min-width: 88px;
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 4px;
+  border: 2px solid #d9d9d9;
+  background: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: #262626;
+}
+
+.room-allotment-bed-pill:disabled {
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.room-allotment-bed-pill-vacant {
+  background: #52c41a;
+  border-color: #389e0d;
+  color: #fff;
+}
+
+.room-allotment-bed-pill-occupied {
+  background: #ff4d4f;
+  border-color: #cf1322;
+  color: #fff;
+}
+
+.room-allotment-bed-pill-selected {
+  background: #e6f7ff;
+  border-color: #1890ff;
+  border-width: 2px;
+  color: #1890ff;
+  box-shadow: 0 0 0 1px #1890ff inset;
+}
+
+.room-allotment-bed-pill-ico {
+  font-size: 14px;
+}
+
+.room-allotment-bed-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+}

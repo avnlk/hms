@@ -1,0 +1,101 @@
+.room-allotment-page {
+  background: #e1f5fe;
+  min-height: calc(100vh - 60px);
+  padding: 8px;
+}
+
+.room-allotment-card {
+  background: #f0f0f0;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  padding: 10px 10px 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.room-allotment-header {
+  background: linear-gradient(90deg, #01b7df 0%, #03adef 100%);
+  border-radius: 2px;
+  min-height: 34px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.room-allotment-header h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.room-allotment-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.room-allotment-toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
+.room-allotment-search {
+  max-width: 200px;
+  flex: 0 1 200px;
+}
+
+.room-allotment-search .ant-input {
+  font-size: 10px;
+}
+
+.room-allotment-icon-btn {
+  background: #26a69a !important;
+  border-color: #26a69a !important;
+}
+
+.room-allotment-icon-btn:hover {
+  background: #2bbbad !important;
+  border-color: #2bbbad !important;
+}
+
+.room-allotment-allot-btn {
+  height: 24px;
+  padding: 0 14px;
+  font-size: 10px;
+  border-radius: 2px;
+  background: #00a8e8;
+}
+
+.room-allotment-table .ant-table {
+  border: 1px solid #dcdcdc;
+}
+
+.room-allotment-table .ant-table-thead > tr > th {
+  background: #d8f1fb;
+  color: #5f5f5f;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 6px 8px;
+}
+
+.room-allotment-table .ant-table-tbody > tr > td {
+  font-size: 10px;
+  color: #7a7a7a;
+  padding: 6px 8px;
+}
+
+.room-allotment-table .ant-pagination {
+  margin: 8px 0 0;
+}
+
+.room-allotment-action-btn {
+  color: #1890ff;
+  padding: 0;
+  height: auto;
+}

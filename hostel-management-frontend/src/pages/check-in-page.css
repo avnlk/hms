@@ -1,0 +1,48 @@
+@import "./room-allotment-list.css";
+
+.check-in-page .room-allotment-card {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.check-in-form .ant-form-item {
+  margin-bottom: 14px;
+}
+
+.check-in-form .ant-form-item-label > label {
+  font-size: 12px;
+  color: #595959;
+}
+
+.check-in-readonly.ant-input[disabled],
+.check-in-form .ant-input[disabled],
+.check-in-form .ant-input-outlined[disabled] {
+  background: #f5f5f5;
+  color: #595959;
+}
+
+.check-in-form .ant-input,
+.check-in-form .ant-input-affix-wrapper {
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.check-in-form .ant-input-textarea textarea {
+  min-height: 100px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.check-in-submit-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.check-in-submit-btn {
+  min-width: 88px;
+  height: 32px;
+  border-radius: 4px;
+  background: #1890ff;
+  font-size: 12px;
+}
