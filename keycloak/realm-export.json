@@ -38,13 +38,7 @@
       "email": "admin@iiitb.ac.in",
       "enabled": true,
       "emailVerified": true,
-      "credentials": [
-        {
-          "type": "password",
-          "value": "Admin@123",
-          "temporary": false
-        }
-      ]
+      "credentials": []
     }
   ]
 }

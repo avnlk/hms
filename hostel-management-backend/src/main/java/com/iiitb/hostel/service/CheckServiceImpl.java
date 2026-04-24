@@ -4,7 +4,6 @@ import java.time.Instant;
 import java.util.Comparator;
 import java.util.List;
 import java.util.UUID;
-import java.util.stream.Collectors;
 
 import com.iiitb.hostel.dto.CheckInOutRequest;
 import com.iiitb.hostel.dto.CheckPreviewDto;
@@ -18,6 +17,7 @@ import com.iiitb.hostel.repository.EventRepository;
 import com.iiitb.hostel.repository.HostelRepository;
 import com.iiitb.hostel.repository.StudentRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class CheckServiceImpl implements CheckService {
@@ -51,6 +51,7 @@ public class CheckServiceImpl implements CheckService {
     }
 
     @Override
+    @Transactional
     public Allocation performCheckIn(CheckInOutRequest request, String performedBy) {
         Student student = findStudentByRoll(request.getRollNumber());
         Allocation allocation = findLatestAllocation(student.getId(), Allocation.AllocationStatus.ALLOTTED);
@@ -94,11 +95,6 @@ public class CheckServiceImpl implements CheckService {
     public CheckPreviewDto getCheckOutPreview(String rollNumber) {
         Student student = studentRepository.findByRollNumber(rollNumber.trim())
             .orElseThrow(() -> new ResourceNotFoundException("Student not found: " + rollNumber));
-        List<Allocation> all = allocationRepository.findByStudentId(student.getId());
-        System.out.println(
-            "All allocations for " + rollNumber + ": "
-                + all.stream().map(a -> a.getStatus().toString()).collect(Collectors.joining(", "))
-        );
         Allocation allocation = findLatestCheckedInAllocation(student.getId(), rollNumber);
         applyRoomNumberForPreview(allocation);
         return CheckPreviewDto.builder()
@@ -108,6 +104,7 @@ public class CheckServiceImpl implements CheckService {
     }
 
     @Override
+    @Transactional
     public Allocation performCheckOut(CheckInOutRequest request, String performedBy) {
         Student student = findStudentByRoll(request.getRollNumber());
         Allocation allocation = findLatestCheckedInAllocation(student.getId(), request.getRollNumber());

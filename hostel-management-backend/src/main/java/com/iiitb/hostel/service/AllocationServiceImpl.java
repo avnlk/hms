@@ -30,6 +30,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
 @Service
@@ -144,6 +145,7 @@ public class AllocationServiceImpl implements AllocationService {
     }
 
     @Override
+    @Transactional
     public Allocation createAllocation(CreateAllocationRequest request, String performedBy) {
         Student student = studentRepository.findById(request.getStudentId())
             .orElseThrow(() -> new ResourceNotFoundException("Student not found: " + request.getStudentId()));
