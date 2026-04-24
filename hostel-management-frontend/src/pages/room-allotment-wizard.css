@@ -1,0 +1,49 @@
+@import "./room-allotment-list.css";
+
+.room-allotment-wizard-card .room-allotment-header {
+  margin-bottom: 16px;
+}
+
+.room-allotment-steps {
+  margin-bottom: 24px;
+  padding: 0 8px;
+}
+
+.room-allotment-wizard-step-body {
+  padding: 0 8px 8px;
+}
+
+.room-allotment-wizard-form .ant-form-item {
+  margin-bottom: 14px;
+}
+
+.room-allotment-wizard-form .ant-form-item-label > label {
+  font-size: 12px;
+  color: #595959;
+}
+
+.room-allotment-wizard-readonly.ant-input[disabled],
+.room-allotment-wizard-form .ant-input[disabled],
+.room-allotment-wizard-form .ant-input-outlined[disabled] {
+  background: #f5f5f5;
+  color: #595959;
+}
+
+.room-allotment-wizard-next-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.room-allotment-wizard-next-btn {
+  min-width: 72px;
+  height: 32px;
+  border-radius: 2px;
+  background: #1890ff;
+}
+
+.room-allotment-roll-search-btn {
+  padding: 0 4px;
+  height: 22px;
+  color: #1890ff;
+}

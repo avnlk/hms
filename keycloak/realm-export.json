@@ -1,0 +1,44 @@
+{
+  "realm": "hostel",
+  "enabled": true,
+  "registrationAllowed": false,
+  "loginWithEmailAllowed": true,
+  "duplicateEmailsAllowed": false,
+  "resetPasswordAllowed": true,
+  "clients": [
+    {
+      "clientId": "hostel-frontend",
+      "name": "hostel-frontend",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "publicClient": true,
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": true,
+      "redirectUris": [
+        "http://localhost:5173/*"
+      ],
+      "webOrigins": [
+        "http://localhost:5173"
+      ],
+      "attributes": {
+        "pkce.code.challenge.method": "S256"
+      }
+    },
+    {
+      "clientId": "hostel-backend",
+      "name": "hostel-backend",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "bearerOnly": true
+    }
+  ],
+  "users": [
+    {
+      "username": "admin@iiitb.ac.in",
+      "email": "admin@iiitb.ac.in",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": []
+    }
+  ]
+}

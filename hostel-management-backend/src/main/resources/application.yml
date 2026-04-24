@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      uri: ${MONGO_URI:mongodb://localhost:27017/hostel_db}
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${KEYCLOAK_ISSUER:http://localhost:8180/realms/hostel}

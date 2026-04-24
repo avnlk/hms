@@ -1,0 +1,47 @@
+.hostel-admin-page {
+  min-height: calc(100vh - 60px);
+  padding: 8px;
+}
+
+.hostel-admin-card {
+  background: #f3f3f3;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  padding: 0 0 10px;
+}
+
+.hostel-admin-header {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  color: #ffffff;
+  font-size: 12px;
+  background: linear-gradient(90deg, #01b7df 0%, #03adef 100%);
+}
+
+.hostel-admin-tree-wrap {
+  margin: 14px 16px 0;
+  border: 1px solid #e0e0e0;
+  background: #f8f8f8;
+}
+
+.hostel-admin-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 8px 16px 0;
+}
+
+.hostel-admin-submit {
+  height: 18px;
+  font-size: 9px;
+  border-radius: 2px;
+  background: #1f94e8;
+}
+
+.hostel-admin-loading {
+  font-size: 10px;
+  color: #7a7a7a;
+  padding: 8px 10px;
+}
